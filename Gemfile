@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'sidekiq'
 gem 'redis'
 gem 'shoryuken'
+gem 'aws-sdk-sqs'
 
 ruby '2.6.3'
 
