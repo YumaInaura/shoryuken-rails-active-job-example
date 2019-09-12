@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# shoryuken
 
-Things you may want to cover:
+create que
 
-* Ruby version
+```
+bundle exec shoryuken sqs create example1
+bundle exec shoryuken sqs create example2
+bundle exec shoryuken sqs create example3
+```
 
-* System dependencies
+worker
 
-* Configuration
+```
+bundle exec shoryuken -R -C config/shoryuken.yml
+```
 
-* Database creation
+job
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle exec rails console
+SampleJob.perform_later
+```
