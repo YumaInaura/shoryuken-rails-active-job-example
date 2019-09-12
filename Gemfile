@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'sidekiq'
 gem 'redis'
+gem 'shoryuken'
 
 ruby '2.6.3'
 
