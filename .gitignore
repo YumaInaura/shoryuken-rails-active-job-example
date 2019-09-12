@@ -16,8 +16,9 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-.env*
-!.sample
+.env
+.envrc
+.DS_Store
 
 # Ignore uploaded files in development.
 /storage/*

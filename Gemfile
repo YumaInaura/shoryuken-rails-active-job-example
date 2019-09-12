@@ -6,6 +6,7 @@ gem 'redis'
 gem 'shoryuken'
 gem 'aws-sdk-sqs'
 gem 'pry-rails'
+gem 'foreman'
 
 ruby '2.6.3'
 
