@@ -5,6 +5,7 @@ gem 'sidekiq'
 gem 'redis'
 gem 'shoryuken'
 gem 'aws-sdk-sqs'
+gem 'pry-rails'
 
 ruby '2.6.3'
 
