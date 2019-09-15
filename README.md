@@ -43,4 +43,5 @@ shoryuken [options]
     -V, --version                    Print version and exit
     -h, --help                       Show help
 ```
+
 https://www.rubydoc.info/github/phstc/shoryuken

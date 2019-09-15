@@ -4,7 +4,7 @@ Shoryuken.configure_server do |config|
   #       the logger when the app is running as usual.
 
   Rails.logger = Shoryuken::Logging.logger
-  Rails.logger.level = Rails.application.config.log_level
+  Rails.logger.level = :info
 
   # config.server_middleware do |chain|
   #  chain.add Shoryuken::MyMiddleware

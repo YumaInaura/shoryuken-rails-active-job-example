@@ -1,5 +1,5 @@
 shoryuken-worker:
-	bundle exec shoryuken -C config/shoryuken.yml -R
+	bundle exec shoryuken -C config/shoryuken.yml --rails --require ./shoryuken_worker.rb
 shoryuken-job:
 	QUEUE_ADAPTER=shoryuken bundle exec rails runner 'ShoryukenJob.perform_later("ABC")'
 job:
