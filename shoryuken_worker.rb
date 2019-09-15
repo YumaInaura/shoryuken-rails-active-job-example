@@ -6,6 +6,10 @@ class ShoryukenWorker
   shoryuken_options queue: 'example3', auto_delete: true
 
   def perform(sqs_msg, name)
-    puts "Hello, #{name}"
+    puts '-' * 100
+    puts 'WORKER'
+    puts '-' * 100
+    puts name
+    puts sqs_msg
   end
 end
