@@ -1,7 +1,7 @@
-shoryuken:
-	bundle exec shoryuken -C config/shoryuken.yml -r ./shoryuken_worker.rb
+shoryuken-worker:
+	bundle exec shoryuken -C config/shoryuken.yml -R
 shoryuken-job:
-	QUEUE_ADAPTER=shoryuken bundle exec rails runner 'ShoryukenJob.perform_later'
+	QUEUE_ADAPTER=shoryuken bundle exec rails runner 'ShoryukenJob.perform_later("ABC")'
 job:
 	bundle exec rails runner 'SampleJob.perform_later'
 reset-sqs-queue:
