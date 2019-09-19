@@ -2,7 +2,9 @@ class ShoryukenWorker
   include Shoryuken::Worker
 
   if ENV['SHORYUKEN_QUEUES']
-    shoryuken_options queue: queue, auto_delete: true
+    ENV['SHORYUKEN_QUEUES'].split(',').each do |queue|
+      shoryuken_options queue: queue, auto_delete: true
+    end
   else
     shoryuken_options queue: 'example1', auto_delete: true
     shoryuken_options queue: 'example2', auto_delete: true

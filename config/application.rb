@@ -11,7 +11,7 @@ module RailsActiveJobExample
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.active_job.queue_adapter = ENV['QUEUE_ADAPTER'].present? ? ENV['QUEUE_ADAPTER'].to_sym : :sidekiq
+    config.active_job.queue_adapter = :shoryuken
     # config.active_job.queue_adapter = :shoryuken
 
     # Settings in config/environments/* take precedence over those specified here.
