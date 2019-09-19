@@ -8,6 +8,8 @@ shoryuken-random-failure-job:
 	QUEUE_ADAPTER=shoryuken bundle exec rails runner 'ShoryukenRandomFailureJob.perform_later("ABC")'
 shoryuken-forever-failure-job:
 	QUEUE_ADAPTER=shoryuken bundle exec rails runner 'ShoryukenForeverFailureJob.perform_later("ABC")'
+shoryuken-retry-job:
+	QUEUE_ADAPTER=shoryuken bundle exec rails runner 'ShoryukenRetryJob.perform_later("ABC")'
 reset-sqs-queue:
 	bundle exec shoryuken sqs delete example1
 	bundle exec shoryuken sqs delete example2
