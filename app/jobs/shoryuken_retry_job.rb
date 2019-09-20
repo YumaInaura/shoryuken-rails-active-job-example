@@ -11,8 +11,8 @@ class ShoryukenRetryJob < ApplicationJob
   end
 
   retry_on SomeError, attempts: 3 do |job, exception|
-    puts job
-    puts exception
+    puts "JOB: #{job}"
+    puts "RETRY COUNT : #{retries_count}"
   end
 
   def perform(message)
