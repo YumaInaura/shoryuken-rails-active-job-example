@@ -1,5 +1,5 @@
 shoryuken-job-worker:
-	bundle exec shoryuken --rails --config config/shoryuken.yml --require ./shoryuken_worker.rb
+	bundle exec shoryuken --rails --config config/shoryuken.yml
 shoryuken-plain-worker:
 	bundle exec shoryuken --config config/shoryuken.yml --require ./shoryuken_worker.rb
 shoryuken-job:
