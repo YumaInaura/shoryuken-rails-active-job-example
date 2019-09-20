@@ -5,7 +5,7 @@ class ShoryukenRetryJob < ApplicationJob
 
   retry_on SomeError, attempts: 3 do |job, exception|
     puts job
-    oyts exception
+    puts exception
   end
 
   def perform(message)
