@@ -2,6 +2,7 @@ class SampleJob < ApplicationJob
   queue_as :example1
 
   def perform(*args)
-    puts "Worked! #{Time.current}"
+    sleep 1
+    puts "AH WORKED!! #{Time.current}"
   end
 end
